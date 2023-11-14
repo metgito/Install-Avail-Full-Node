@@ -32,8 +32,7 @@ sudo nano /etc/systemd/system/availd.service
 Validator After=network.target StartLimitIntervalSec=0 \[Service\]
 User=root ExecStart= /root/avail/target/release/data-avail \--base-path
 \`pwd\`/data \--chain goldberg \--name \"HerslayTC\" Restart=always
-RestartSec=120 \[Install\] WantedBy=multi-user.target Đổi tên chain =
-goldberg
+RestartSec=120 \[Install\] WantedBy=multi-user.target 
 
 -----------------------------------
 
